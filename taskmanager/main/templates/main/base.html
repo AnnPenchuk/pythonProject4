@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    </div>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<header>
+    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+
+          <a class="me-3 py-2 text-dark text-decoration-none" href="/create">   Создать пост</a>
+      </a>
+        <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+          <div class="navbar navbar-dark bg-dark shadow-sm">
+        </div>
+          <ul class="list-unstyled">
+              <li><a class="me-3 py-2 text-dark text-decoration-none" href="/">Главная </a></li>
+        <li><a class="me-3 py-2 text-dark text-decoration-none" href="/about"> Популярное</a></li>
+     </ul>
+  </div>
+
+         <h3>Поиск по сайту</h3>
+
+<form action="{% url 'search' %}" method="get">
+  <input name="q" type="text" placeholder="Поиск...">
+
+</form>
+    </div>
+  </div>
+</header>
+
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+     {% block content %}{% endblock %}
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Последние новости</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">политика</a></li>
+            <li><a href="#" class="text-white">культура</a></li>
+            <li><a href="#" class="text-white">чрезвычайные проишествия</a></li>
+          </ul>
+        </div>
+      </html>
+    </div>
+  </div>
+
+      <a href="#" class="navbar-brand d-flex align-items-center">
+
+        <strong>ФОТО</strong>
+      </a>
+
+
